@@ -1,38 +1,109 @@
-.App {
+/* Styles for the heading */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  text-shadow: 2px 2px 0 #fff, 3px 3px 0 #ccc;
+}
+
+/* Styles for the form and its labels and inputs */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-right: 1rem;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #333;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Styles for the list of items */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles for the link in each list item */
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  padding: 0.5rem;
+  background-color: #FF6B6B;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+  text-shadow: 1px 1px 0 #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  background-color: #FF4848;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Additional film-themed styles */
+body {
+  background-color: #F0EFEF;
+  background-image: linear-gradient(90deg, #C8C8C8 50%, transparent 50%), linear-gradient(90deg, #C8C8C8 50%, transparent 50%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
 }
 
-.App-link {
-  color: #61dafb;
+select:focus {
+  outline: none;
+  border-color: #FFA0A0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  text-shadow: 1px 1px 0 #fff;
 }
+
+label::after {
+  content: ' *';
+  color: #FF6B6B;
+}
+
+input[type='submit'] {
+  background-color: #4A90E2;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  text-shadow: 1px 1px 0 #333;
+}
+
+input[type='submit']:hover {
+  background-color: #3876C7;
+}
+

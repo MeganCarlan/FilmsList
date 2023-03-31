@@ -43,29 +43,16 @@ export function FilmsPage() {
             </div>
         </form>
         <div>
-        <div>
-            <span># Of Films</span>
-            <span>{total}</span>
-        </div>
-            <div>
-                <span>Average Rating</span>
-                <span>{avg_score.toFixed(2)}</span>
-            </div>
-            <div>
-                <span>Latest Film</span>
-                <span>{latest}</span>
-            </div>
-        </div>
-
-        <ul >
-            {filmsByDirector.map((film) => {
-               return (
-               <li key={film.id}>
-                    <Link to={`${film.id}`}>{film.title}</Link>
-                </li>
-            );
-               })}
-        </ul>
+            <ul >
+                {filmsByDirector.map((film) => {
+                return (
+                <li key={film.id}>
+                        <Link to={`${film.id}`}>{film.title}</Link>
+                    </li>
+                );
+                })}
+            </ul>
+      </div>
       </div>
     );
   }

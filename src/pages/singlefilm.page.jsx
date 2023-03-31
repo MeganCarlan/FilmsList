@@ -22,9 +22,10 @@ export function SingleFilmPage(props) {
     return (
         <div>
          <div>
-            <img src={`${item.image}`} alt={`${item.title} Poster`} />
+            {/* <img src={`${item.image}`} alt={`${item.title} Poster`} /> */}
+            <p> In progress..</p>
         </div>
-        <div>
+        {/* <div>
             <h1>{item.title}</h1>
              <p>
                 Directed by {item.director}. Produced by {item.producer}.
@@ -43,7 +44,7 @@ export function SingleFilmPage(props) {
             </p>
             <h2>Description</h2>
             <p>{item.description}</p>
-         </div>
+         </div> */}
         </div>
     )
 
